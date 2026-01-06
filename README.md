@@ -55,3 +55,9 @@
 <script src="script.js"></script>
 </body>
 </html>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
