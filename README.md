@@ -3,53 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markas Cetak Custom</title>
+  <title>Markas Cetak Custom | Souvenir Profesional</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Markas Cetak Custom</h1>
-  <p>Custom Souvenir • Profesional • Sesuai Kebutuhan Anda</p>
-  <a href="#order" class="btn-primary">Order Sekarang</a>
+<header class="topbar">
+  <div>
+    <h1>Markas Cetak Custom</h1>
+    <p>Souvenir Cetak • Profesional • Terpercaya</p>
+  </div>
+  <button class="login">Masuk</button>
 </header>
 
-<section class="about">
-  <h2>Tentang Markas Cetak Custom</h2>
-  <p>Kami melayani pembuatan souvenir custom untuk berbagai kebutuhan: event, kantor, komunitas, dan personal dengan kualitas profesional.</p>
+<!-- HERO -->
+<section class="hero">
+  <h2>Pesan Souvenir Custom dengan Mudah</h2>
+  <p>Proses manual • Aman • Konsultasi langsung via WhatsApp</p>
 </section>
 
-<section class="produk">
-  <h2>Produk Populer</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Souvenir Event</h3>
-      <p>Custom logo & desain</p>
-    </div>
-    <div class="card">
-      <h3>Souvenir Kantor</h3>
-      <p>Elegan & berkelas</p>
-    </div>
-    <div class="card">
-      <h3>Souvenir Custom</h3>
-      <p>Sesuai request</p>
-    </div>
-  </div>
+<!-- STEP 1 -->
+<section class="card">
+  <h3>1️⃣ Data Pemesan</h3>
+  <input type="text" id="nama" placeholder="Nama Lengkap">
+  <input type="text" id="wa" placeholder="Nomor WhatsApp (62...)">
 </section>
 
-<section class="order" id="order">
-  <h2>Form Pemesanan</h2>
+<!-- STEP 2 -->
+<section class="card">
+  <h3>2️⃣ Pilih Jenis Souvenir</h3>
+  <select id="jenis">
+    <option value="">-- Pilih Jenis --</option>
+    <option value="Souvenir Nikahan">Souvenir Nikahan</option>
+    <option value="Souvenir Kantor">Souvenir Kantor</option>
+    <option value="Souvenir Custom">Souvenir Custom</option>
+  </select>
+</section>
 
-  <input type="text" id="nama" placeholder="Nama Anda">
-  <input type="text" id="produk" placeholder="Jenis Souvenir">
-  <input type="number" id="jumlah" placeholder="Jumlah">
-  <textarea id="catatan" placeholder="Catatan / request desain"></textarea>
+<!-- STEP 3 -->
+<section class="card">
+  <h3>3️⃣ Jumlah & Catatan</h3>
+  <input type="number" id="jumlah" placeholder="Jumlah Pesanan">
+  <textarea id="catatan" placeholder="Catatan tambahan (opsional)"></textarea>
+</section>
 
-  <button onclick="kirimWA()">Pesan via WhatsApp</button>
+<!-- STEP 4 -->
+<section class="card">
+  <h3>4️⃣ Pembayaran</h3>
+  <p class="info">
+    Silakan lakukan pembayaran melalui link berikut sebelum pesanan diproses.
+  </p>
+  <a href="https://contoh-link-pembayaran.com" target="_blank" class="pay">
+    💳 Link Pembayaran
+  </a>
+</section>
+
+<!-- STEP 5 -->
+<section class="card">
+  <h3>5️⃣ Kirim Pesanan</h3>
+  <button class="wa" onclick="kirimWA()">Kirim Pesanan via WhatsApp</button>
 </section>
 
 <footer>
-  <p>© 2026 MARKAS CETAK CUSTOM</p>
+  © 2026 Markas Cetak Custom<br>
+  Proses Manual • Aman • Legal
 </footer>
 
 <script src="script.js"></script>
+</body>
+</html>
