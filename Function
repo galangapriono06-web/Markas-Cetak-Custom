@@ -1,0 +1,31 @@
+function kirimWA() {
+  let nama = document.getElementById('nama').value;
+  let waUser = document.getElementById('wa').value;
+  let jenis = document.getElementById('jenis').value;
+  let jumlah = document.getElementById('jumlah').value;
+  let catatan = document.getElementById('catatan').value;
+
+  if (!nama || !waUser || !jenis || !jumlah) {
+    alert("Mohon lengkapi data wajib!");
+    return;
+  }
+
+  let pesan = `Halo Markas Cetak Custom,
+Saya ingin melakukan pemesanan souvenir.
+
+Nama : ${nama}
+No WA : ${waUser}
+Jenis Souvenir : ${jenis}
+Jumlah : ${jumlah}
+
+Catatan :
+${catatan}
+
+Mohon info estimasi & konfirmasi.`;
+
+  let adminWA = '628xxxxxxxxxx'; // GANTI NOMOR ADMIN
+  window.open(
+    `https://wa.me/${6281215693502}?text=${encodeURIComponent(pesan)}`,
+    '_blank'
+  );
+}
