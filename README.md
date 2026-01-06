@@ -69,6 +69,6 @@
   Proses Manual • Aman • Legal
 </footer>
 
-<script src="script.js"></script>
+<script src="body"></script>
 </body>
 </html>
