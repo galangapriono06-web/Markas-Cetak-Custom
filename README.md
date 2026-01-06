@@ -53,21 +53,3 @@
 </footer>
 
 <script src="script.js"></script>
-</body>
-</html>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #0f172a;
-  color: #e5e7eb;
-}
-header {
-  background: linear-gradient(135deg, #020617, #111827);
-  color: #ffffff;
-  padding: 70px 20px;
-  text-align: center;
-}
-
-header p {
-  color: #cbd5f5;
-}
